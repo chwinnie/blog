@@ -2,7 +2,7 @@
 
 Heroku link: https://evening-bayou-8850.herokuapp.com
 
-Added devise gem. Having issues with log in and log out.
+Added devise gem. 
 
 Validations:
 * Making sure an article has a title and text.
