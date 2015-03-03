@@ -17,9 +17,12 @@ gem 'pg'
 # Use SCSS for stylesheets
 # gem 'sass-rails', '~> 5.0'
 
+#bootstrap
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 
+#devise
+gem 'devise'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

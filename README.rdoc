@@ -1,3 +1,13 @@
 == README
 
 Heroku link: https://evening-bayou-8850.herokuapp.com
+
+Added devise gem. Having issues with log in and log out.
+
+Validations:
+* Making sure an article has a title and text.
+* Making sure an article title is not too short.
+* Making sure a comment has a commenter and a body (of text).
+
+Error messages are displayed for the first two. Last validation simply reloads page.
+
