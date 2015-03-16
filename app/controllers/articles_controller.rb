@@ -1,6 +1,5 @@
 class ArticlesController < ApplicationController
 	# http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
-	before_filter :authenticate_user!
 
 	def index
 		@articles = Article.all 
@@ -20,6 +19,7 @@ class ArticlesController < ApplicationController
 
 	def create
 		@article = Article.new(article_params)
+		@article.user_id = current_user.id #include this in article_params?
 
 		if @article.save
 			redirect_to @article

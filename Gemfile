@@ -24,6 +24,11 @@ gem 'autoprefixer-rails'
 #devise
 gem 'devise'
 
+#letter_opener for dev
+group :development do
+	gem 'letter_opener', github: 'ryanb/letter_opener'
+end
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views

@@ -1,9 +1,20 @@
 class CommentsController < ApplicationController
-	# http_basic_authenticate_with name: "dhh", password: "secret", only: :destroy
 
 	def create
 		@article = Article.find(params[:article_id])
 		@comment = @article.comments.create(comment_params)
+		@comment.user_id = current_user.id
+		
+		logger.debug "Creating new comment"
+		logger.debug "#{@comment.user_id}"
+		logger.debug "#{@comment.commenter}"
+		logger.debug "#{@comment.body}"
+
+		if @comment.save
+			logger.debug "Saving new comment"
+			Notifications.new_comment(@comment).deliver_now
+		end
+
 		redirect_to article_path(@article)
 	end
 
