@@ -2,6 +2,12 @@
 
 Heroku link: https://evening-bayou-8850.herokuapp.com
 
+Added sendgrid for heroku add-on.
+If an user comments on an article you wrote, you receive an email notification. 
+To test: create an account by signing up, create a new article and comment on your own article. 
+You should receive an email notification that you commented on your own article.
+
+---
 Added devise gem. 
 
 Validations:
