@@ -9,14 +9,6 @@
 	<%= @article.text %>
 </p>
 
-<p>
-	<strong>Author ID:</strong>
-	<%= @article.user_id%>
-</p>
-
-
-
-
 <% if @article.comments.any? %>
 	<h2>Comments</h2>
 	<%= render @article.comments %>
