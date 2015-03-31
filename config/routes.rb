@@ -12,6 +12,8 @@ Rails.application.routes.draw do
     resources :comments
   end
 
+  resources :special_articles
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
