@@ -2,6 +2,12 @@
 
 Heroku link: https://evening-bayou-8850.herokuapp.com
 
+Added four queries on this page: https://evening-bayou-8850.herokuapp.com/special_articles
+
+There is also a link to the special_articles page on the articles page, see
+https://evening-bayou-8850.herokuapp.com/articles
+
+---
 Added sendgrid for heroku add-on.
 If an user comments on an article you wrote, you receive an email notification. 
 To test: create an account by signing up, create a new article and comment on your own article. 
